@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AstraNexus | 次世代Webアプリケーション開発・SaaSエンジニアリング</title>
+  <meta name="description" content="AstraNexusは、最新の技術スタック（JavaScript, Node.js, Laravel, Docker等）を用いて、高品質でスケーラブルなカスタムWebアプリケーションおよびSaaSの設計・開発を行うプロダクトエンジニアリング集団です。">
+  <link rel="canonical" href="https://astranexus.dev/">
+
+  <!-- OGP / Social Media Meta Tags -->
+  <meta property="og:title" content="AstraNexus | 次世代Webアプリケーション開発・SaaSエンジニアリング">
+  <meta property="og:description" content="AstraNexusは、最新の技術スタックを用いて高品質でスケーラブルなカスタムWebアプリケーションおよびSaaSの設計・開発を行うプロダクトエンジニアリング集団です。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://astranexus.dev/">
+  <meta property="og:site_name" content="AstraNexus">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AstraNexus | 次世代Webアプリケーション開発・SaaSエンジニアリング">
+  <meta name="twitter:description" content="AstraNexusは、最新の技術スタックを用いて高品質でスケーラブルなカスタムWebアプリケーションおよびSaaSの設計・開発を行うプロダクトエンジニアリング集団です。">
+
+  <!-- Preconnect & Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/assets/index-neTPzrNz.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-Gv1C6jYb.css">
+</head>
+<body class="dark-theme">
+  <!-- Dynamic Gradient Background Blob -->
+  <div class="bg-blur-container">
+    <div class="blur-blob blob-1"></div>
+    <div class="blur-blob blob-2"></div>
+    <div class="blur-blob blob-3"></div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header id="header" class="header">
+    <div class="container navbar-container">
+      <a href="#" class="logo" id="logo">
+        <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AstraNexus ロゴ">
+          <rect width="32" height="32" rx="8" fill="url(#logo-grad)" />
+          <path d="M9 23L16 9L23 23M12 17H20" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs>
+            <linearGradient id="logo-grad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#00f2fe" />
+              <stop offset="1" stop-color="#4facfe" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="logo-text">Astra<span>Nexus</span></span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#tech" class="nav-link">Technology</a></li>
+          <li><a href="#process" class="nav-link">Process</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <!-- <li><a href="#contact" class="nav-link-btn">Contact Us</a></li> -->
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="テーマ切り替え">
+          <!-- Sun Icon -->
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon -->
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="menu-toggle" class="menu-toggle-btn" aria-label="メニュー開閉">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content fade-in-up">
+        <div class="badge">PRO ENGINEERING STUDIO</div>
+        <h1 class="hero-title">
+          アイデアを、美しく動く<br>
+          <span class="gradient-text">Webアプリケーション</span>へ
+        </h1>
+        <p class="hero-subtitle">
+          AstraNexusは、堅牢なフロントエンド、スケーラブルなAPI、そしてコンテナベースのインフラストラクチャを統合し、ビジネスを次の次元へ加速するWebアプリケーション開発企業です。
+        </p>
+        <div class="hero-actions">
+          <!-- <a href="#contact" class="btn btn-primary">
+            プロジェクトを始める
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a> -->
+          <a href="#services" class="btn btn-secondary">サービス詳細</a>
+        </div>
+      </div>
+      
+      <!-- Interactive CSS Dashboard Mockup -->
+      <div class="hero-visual fade-in-up delay-200">
+        <div class="mockup-frame">
+          <div class="mockup-header">
+            <div class="mockup-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="mockup-address">astranexus.dev/dashboard</div>
+          </div>
+          <div class="mockup-body">
+            <aside class="mockup-sidebar">
+              <div class="sidebar-item active"></div>
+              <div class="sidebar-item"></div>
+              <div class="sidebar-item"></div>
+              <div class="sidebar-item"></div>
+            </aside>
+            <main class="mockup-content">
+              <div class="mockup-row">
+                <div class="mockup-card highlight">
+                  <span class="card-label">Monthly Active Users</span>
+                  <span class="card-val animate-num" data-val="128450">0</span>
+                  <span class="card-trend upward">+14.2%</span>
+                </div>
+                <div class="mockup-card">
+                  <span class="card-label">Server Health</span>
+                  <span class="card-val">99.98%</span>
+                  <span class="card-badge-green">Stable</span>
+                </div>
+              </div>
+              <div class="mockup-card large">
+                <div class="chart-header">
+                  <span class="chart-title">Request Performance</span>
+                  <span class="chart-desc">Response time: 42ms avg</span>
+                </div>
+                <div class="mockup-chart">
+                  <div class="chart-bar-container">
+                    <div class="chart-bar" style="height: 60%"></div>
+                    <div class="chart-bar" style="height: 75%"></div>
+                    <div class="chart-bar" style="height: 45%"></div>
+                    <div class="chart-bar" style="height: 90%"></div>
+                    <div class="chart-bar" style="height: 80%"></div>
+                    <div class="chart-bar animate-pulse" style="height: 95%"></div>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services-section section">
+    <div class="container">
+      <div class="section-header text-center fade-in-up">
+        <h2 class="section-title">私たちの提供サービス</h2>
+        <p class="section-subtitle">企画・設計から実装、運用まで、一気通貫したプロフェッショナルなプロダクトエンジニアリングを提供します。</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card fade-in-up">
+          <div class="service-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2 12 17 22 12 12 17 2 12 12 17 12 22"></polygon>
+            </svg>
+          </div>
+          <h3>カスタムWebアプリ開発</h3>
+          <p>業務効率化ツール、社内システム、マッチングプラットフォームなど、お客様のビジネス要件に特化したWebアプリケーションをフルカスタマイズで構築します。</p>
+          <span class="service-tag">JavaScript / API連携</span>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card fade-in-up delay-100">
+          <div class="service-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <h3>SaaS製品設計・開発</h3>
+          <p>新規事業としてのSaaS製品立ち上げを支援します。堅牢なマルチテナント認証、サブスクリプション決済（Stripe連携）、高パフォーマンスなUI/UXを実現します。</p>
+          <span class="service-tag">SaaS / Stripe決済 / マルチテナンシー</span>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card fade-in-up delay-200">
+          <div class="service-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+              <polygon points="9.5 13.5 11.5 15.5 15.5 11.5"></polygon>
+            </svg>
+          </div>
+          <h3>モダンフロントエンド刷新</h3>
+          <p>既存のレガシーなWebシステムを、最新のJavaScriptを用いたモダンなフロントエンドでリビルド。表示速度の向上、保守性の高いコードへと昇華させます。</p>
+          <span class="service-tag">SPA / レガシー移行 / パフォーマンス改善</span>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card fade-in-up delay-300">
+          <div class="service-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+            </svg>
+          </div>
+          <h3>インフラ構築 / DevOps</h3>
+          <p>Dockerを用いたコンテナ化による、環境依存のないクリーンかつ堅牢な環境設計。CI/CD構築による迅速かつ安全なデプロイ環境を整えます。</p>
+          <span class="service-tag">Docker / CI・CD / コンテナ管理</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technology Stack Section -->
+  <section id="tech" class="tech-section section">
+    <div class="container">
+      <div class="section-header text-center fade-in-up">
+        <h2 class="section-title">技術スタック</h2>
+        <p class="section-subtitle">堅牢、高速、そして保守性に優れたWebアプリケーション開発のため、最適なテクノロジーを採用しています。</p>
+      </div>
+
+      <!-- Filters -->
+      <div class="tech-filters fade-in-up">
+        <button class="filter-btn active" data-filter="all">すべて</button>
+        <button class="filter-btn" data-filter="frontend">フロントエンド</button>
+        <button class="filter-btn" data-filter="backend">バックエンド</button>
+        <button class="filter-btn" data-filter="infra">インフラ</button>
+      </div>
+
+      <!-- Tech Grid -->
+      <div class="tech-grid fade-in-up">
+        <!-- JavaScript -->
+        <div class="tech-item" data-category="frontend">
+          <div class="tech-logo-wrapper js-logo-tech">
+            <span>JS</span>
+          </div>
+          <h3>JavaScript</h3>
+        </div>
+        <!-- Node.js -->
+        <div class="tech-item" data-category="backend">
+          <div class="tech-logo-wrapper">
+            <svg class="tech-icon" viewBox="0 0 100 100" fill="#339933">
+              <path d="M47.5 15 L20 31 L20 63 L47.5 79 L75 63 L75 31 Z M47.5 72 L27.5 60 L27.5 37 L47.5 25 L67.5 37 L67.5 60 Z"/>
+            </svg>
+          </div>
+          <h3>Node.js</h3>
+        </div>
+        <!-- Laravel -->
+        <div class="tech-item" data-category="backend">
+          <div class="tech-logo-wrapper">
+            <svg class="tech-icon" viewBox="0 0 100 100" fill="#FF2D20">
+              <path d="M80,30 L60,18 L40,30 L40,54 L60,66 L80,54 Z M60,26 L72,33 L72,47 L60,54 L48,47 L48,33 Z M40,54 L20,42 L20,66 L40,78 L60,66 L60,54 Z" fill="none" stroke="#FF2D20" stroke-width="4"/>
+              <path d="M40,54 L40,78 M60,66 L60,54" stroke="#FF2D20" stroke-width="4"/>
+            </svg>
+          </div>
+          <h3>Laravel</h3>
+        </div>
+        <!-- PostgreSQL -->
+        <div class="tech-item" data-category="backend">
+          <div class="tech-logo-wrapper">
+            <svg class="tech-icon" viewBox="0 0 100 100" fill="#336791">
+              <path d="M50 15 C30 15 20 25 20 45 C20 65 30 75 50 75 C70 75 80 65 80 45 C80 25 70 15 50 15 Z"/>
+            </svg>
+          </div>
+          <h3>PostgreSQL</h3>
+        </div>
+        <!-- MySQL -->
+        <div class="tech-item" data-category="backend">
+          <div class="tech-logo-wrapper">
+            <svg class="tech-icon" viewBox="0 0 100 100" fill="#00758F">
+              <path d="M20,50 C20,30 35,20 50,20 C65,20 80,30 80,50 C80,70 65,80 50,80 C35,80 20,70 20,50 Z" fill="none" stroke="#00758F" stroke-width="5"/>
+              <path d="M45,30 C48,25 55,25 58,30 C63,40 50,55 50,55 C50,55 37,40 42,30 Z" fill="#F29111"/>
+            </svg>
+          </div>
+          <h3>MySQL</h3>
+        </div>
+        <!-- Docker -->
+        <div class="tech-item" data-category="infra">
+          <div class="tech-logo-wrapper">
+            <svg class="tech-icon" viewBox="0 0 100 100" fill="#2496ed">
+              <path d="M15 50 H30 V60 H15 Z M35 50 H50 V60 H35 Z M55 50 H70 V60 H55 Z M35 35 H50 V45 H35 Z"/>
+            </svg>
+          </div>
+          <h3>Docker</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Development Process -->
+  <section id="process" class="process-section section">
+    <div class="container">
+      <div class="section-header text-center fade-in-up">
+        <h2 class="section-title">開発のプロセス</h2>
+        <p class="section-subtitle">丁寧なヒアリングに基づき、アジャイルかつ透明性の高いプロセスでお客様のプロダクトを成長させます。</p>
+      </div>
+
+      <!-- Horizontal Progress Path -->
+      <div class="process-flow fade-in-up">
+        <div class="process-line"></div>
+        <div class="process-step active" data-step="1">
+          <div class="step-num">1</div>
+          <span class="step-label">ヒアリング・要件定義</span>
+        </div>
+        <div class="process-step" data-step="2">
+          <div class="step-num">2</div>
+          <span class="step-label">UI/UX・設計</span>
+        </div>
+        <div class="process-step" data-step="3">
+          <div class="step-num">3</div>
+          <span class="step-label">アジャイル開発</span>
+        </div>
+        <div class="process-step" data-step="4">
+          <div class="step-num">4</div>
+          <span class="step-label">テスト・リリース</span>
+        </div>
+      </div>
+
+      <!-- Process Detail Cards Container -->
+      <div class="process-detail-container fade-in-up">
+        <!-- Step 1 Detail -->
+        <div class="process-detail-card active" id="process-detail-1">
+          <div class="detail-header">
+            <span class="detail-number">01</span>
+            <h3>ヒアリング・要件定義</h3>
+          </div>
+          <p>お客様のビジネスモデル、現状の課題、プロダクトの最終目標を詳しくヒアリングします。アイデアを具現化するための要件定義を行い、機能一覧やシステム設計のドラフトを作成します。また、想定ユーザー層を想定したペルソナ選定などもこのフェーズで行います。</p>
+          <div class="detail-meta">
+            <div class="meta-item">
+              <strong>期間目安:</strong> 2〜3 週間
+            </div>
+            <div class="meta-item">
+              <strong>主な納品物:</strong> 要件定義書、システム基本設計図、開発ロードマップ
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2 Detail -->
+        <div class="process-detail-card" id="process-detail-2">
+          <div class="detail-header">
+            <span class="detail-number">02</span>
+            <h3>UI/UX・設計</h3>
+          </div>
+          <p>使いやすさと美しさを兼ね備えたインターフェースを設計します。Figmaを用いたワイヤーフレーム作成から始まり、実際に触って動作を確認できるプロトタイプを作成します。お客様と共にユーザー視点での操作性をレビューし、デザインをFIXさせます。</p>
+          <div class="detail-meta">
+            <div class="meta-item">
+              <strong>期間目安:</strong> 3〜4 週間
+            </div>
+            <div class="meta-item">
+              <strong>主な納品物:</strong> Figmaデザインカンプ、高精度プロトタイプ、画面遷移図
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3 Detail -->
+        <div class="process-detail-card" id="process-detail-3">
+          <div class="detail-header">
+            <span class="detail-number">03</span>
+            <h3>アジャイル開発</h3>
+          </div>
+          <p>機能単位でスプリント（1〜2週間の開発サイクル）を回しながら段階的に実装します。隔週でのデモ実施やステージング環境へのデプロイを行い、お客様自身が実際に動く画面を確認しながら、柔軟に仕様調整を行うことができる透明性の高い開発スタイルを維持します。</p>
+          <div class="detail-meta">
+            <div class="meta-item">
+              <strong>期間目安:</strong> 2〜4 ヶ月 (規模による)
+            </div>
+            <div class="meta-item">
+              <strong>主な納品物:</strong> 開発ソースコード（GitHub共有）、動作可能中間システム
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 4 Detail -->
+        <div class="process-detail-card" id="process-detail-4">
+          <div class="detail-header">
+            <span class="detail-number">04</span>
+            <h3>テスト・リリース</h3>
+          </div>
+          <p>様々な端末・ブラウザ環境での手動および自動テストを徹底して行います。セキュリティ監査や耐久テストを実施し、高品質を確認した上で、Dockerコンテナ環境へデプロイ・公開します。リリース後も、保守監視、改善提案など長期的なサポートを実施します。</p>
+          <div class="detail-meta">
+            <div class="meta-item">
+              <strong>期間目安:</strong> 2 週間
+            </div>
+            <div class="meta-item">
+              <strong>主な納品物:</strong> 本番環境アプリケーション、保守マニュアル、テスト結果報告書
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="about-section section">
+    <div class="container">
+      <div class="section-header text-center fade-in-up">
+        <h2 class="section-title">会社概要</h2>
+        <p class="section-subtitle">Webの可能性を信じ、エンジニアリングで新しい価値を創出するチームです。</p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Vision Column -->
+        <div class="about-vision-card fade-in-up">
+          <div class="vision-badge">OUR MISSION</div>
+          <h3>卓越した技術で、ビジネスの可能性をスケールする。</h3>
+          <p>私たちは、ただ言われた通りのシステムを作る受託企業ではありません。お客様のビジネスパートナーとして寄り添い、真に価値のあるデジタルプロダクトを最高の技術でつくり上げます。</p>
+          
+          <div class="stats-row">
+            <div class="stat-box">
+              <span class="stat-num animate-num" data-val="60">0</span>
+              <span class="stat-unit">+</span>
+              <p>リリース実績</p>
+            </div>
+            <div class="stat-box">
+              <span class="stat-num animate-num" data-val="98">0</span>
+              <span class="stat-unit">%</span>
+              <p>顧客満足度</p>
+            </div>
+            <div class="stat-box">
+              <span class="stat-num animate-num" data-val="18">0</span>
+              <span class="stat-unit">名</span>
+              <p>専属エンジニア</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Corporate Profile Column -->
+        <div class="about-profile-card fade-in-up delay-150">
+          <h3>企業情報</h3>
+          <table class="profile-table">
+            <tr>
+              <th>会社名</th>
+              <td>株式会社AstraNexus (AstraNexus Inc.)</td>
+            </tr>
+            <tr>
+              <th>設立</th>
+              <td>2022年4月12日</td>
+            </tr>
+            <tr>
+              <th>代表取締役 CEO</th>
+              <td></td>
+            </tr>
+            <tr>
+              <th>所在地</th>
+              <td></td>
+            </tr>
+            <tr>
+              <th>事業内容</th>
+              <td>
+                Webアプリケーション受託開発、SaaSプロダクト開発支援、コンテナインフラ/DevOps構築、ITエンジニアリングコンサルティング
+              </td>
+            </tr>
+            <tr>
+              <th>資本金</th>
+              <td>5,000万円</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us / Project Planner Section -->
+  <!--
+  <section id="contact" class="contact-section section">
+    <div class="container">
+      <div class="section-header text-center fade-in-up">
+        <h2 class="section-title">プロジェクトの相談をする</h2>
+        <p class="section-subtitle">新規アプリのアイデア、既存システムの刷新、SaaSの立ち上げなど、お気軽にご相談ください。</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-form-wrapper fade-in-up">
+          <form id="project-planner-form" novalidate>
+            <div class="form-group">
+              <label class="form-label-top">ご相談のタイプ (複数選択可)</label>
+              <div class="checkbox-buttons-grid">
+                <label class="check-btn">
+                  <input type="checkbox" name="project_type" value="saas">
+                  <span>SaaS立ち上げ</span>
+                </label>
+                <label class="check-btn">
+                  <input type="checkbox" name="project_type" value="custom-app">
+                  <span>業務Webアプリ開発</span>
+                </label>
+                <label class="check-btn">
+                  <input type="checkbox" name="project_type" value="legacy-dev">
+                  <span>レガシーシステム刷新</span>
+                </label>
+                <label class="check-btn">
+                  <input type="checkbox" name="project_type" value="other" checked>
+                  <span>その他相談</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label-top">ご予算の目安</label>
+              <div class="radio-buttons-grid">
+                <label class="radio-btn">
+                  <input type="radio" name="project_budget" value="under-3m">
+                  <span>〜300万円</span>
+                </label>
+                <label class="radio-btn">
+                  <input type="radio" name="project_budget" value="3m-10m" checked>
+                  <span>300万〜1,000万円</span>
+                </label>
+                <label class="radio-btn">
+                  <input type="radio" name="project_budget" value="over-10m">
+                  <span>1,000万円〜</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="input-row">
+              <div class="form-group input-floating">
+                <input type="text" id="contact-name" name="name" required placeholder=" ">
+                <label for="contact-name">お名前</label>
+                <span class="error-msg">お名前を入力してください。</span>
+              </div>
+              <div class="form-group input-floating">
+                <input type="email" id="contact-email" name="email" required placeholder=" ">
+                <label for="contact-email">メールアドレス</label>
+                <span class="error-msg">有効なメールアドレスを入力してください。</span>
+              </div>
+            </div>
+
+            <div class="form-group input-floating">
+              <textarea id="contact-message" name="message" required placeholder=" " rows="5"></textarea>
+              <label for="contact-message">プロジェクト概要・ご相談内容</label>
+              <span class="error-msg">内容をご記入ください。</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">
+              プランナーに相談する (無料)
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+          </form>
+        </div>
+
+        <div class="contact-info-card fade-in-up delay-150">
+          <h3>お急ぎのお問い合わせ</h3>
+          <p class="contact-desc">
+            プロジェクトについての即時ヒアリングや、技術パートナーに関するご相談などは、お電話またはダイレクトメールでもお受けしています。
+          </p>
+          
+          <div class="info-list">
+            <div class="info-item">
+              <div class="info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div>
+                <span class="info-label">Email</span>
+                <a href="mailto:contact@astranexus.dev" class="info-val">contact@astranexus.dev</a>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div>
+                <span class="info-label">TEL</span>
+                <span class="info-val">03-6400-XXXX</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="map-mockup">
+            <div class="map-tag">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              渋谷オフィス
+            </div>
+            <div class="map-grid-bg">
+              <div class="map-road main-road"></div>
+              <div class="map-road cross-road"></div>
+              <div class="map-road diag-road"></div>
+              <div class="map-pin"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-info">
+        <a href="#" class="logo">
+          <svg class="logo-icon" width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="32" rx="8" fill="url(#logo-grad-f)" />
+            <path d="M9 23L16 9L23 23M12 17H20" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs>
+              <linearGradient id="logo-grad-f" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#00f2fe" />
+                <stop offset="1" stop-color="#4facfe" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <span class="logo-text">Astra<span>Nexus</span></span>
+        </a>
+        <p class="footer-desc">次世代のWebアプリケーション、SaaS開発のプロダクトエンジニアリング集団。お客様のビジネス可能性を最大化します。</p>
+      </div>
+      
+      <div class="footer-links-col">
+        <div class="footer-title">ナビゲーション</div>
+        <ul class="footer-links">
+          <li><a href="#services">サービス</a></li>
+          <li><a href="#tech">技術スタック</a></li>
+          <li><a href="#process">開発プロセス</a></li>
+          <li><a href="#about">会社概要</a></li>
+        </ul>
+      </div>
+ 
+      <div class="footer-links-col">
+        <div class="footer-title">ソーシャル</div>
+        <ul class="footer-links">
+          <li><a href="#">X (Twitter)</a></li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Note</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      <p>&copy; 2026 AstraNexus Inc. All Rights Reserved.</p>
+      <p class="ai-notice" style="margin-top: 0.75rem; opacity: 0.6; font-size: 0.8rem;">
+        ※このウェブサイトはAIによって自動生成されたデモサイトであり、掲載されている「AstraNexus」は架空の企業です。実在する団体・人物等とは一切関係ありません。
+      </p>
+    </div>
+  </footer>
+
+  <!-- Success Modal Popup -->
+  <div id="success-modal" class="modal-overlay">
+    <div class="modal-card">
+      <div class="success-icon-check">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+      <h3>送信完了いたしました</h3>
+      <p>お問い合わせいただきありがとうございます。ご記入いただいたメールアドレス宛てに、担当プランナーより2営業日以内にご連絡差し上げます。</p>
+      <button id="close-modal-btn" class="btn btn-primary">閉じる</button>
+    </div>
+  </div>
+
+  <!-- Main Scripts -->
+</body>
+</html>
