@@ -788,7 +788,8 @@ body.light-theme .moon-icon {
   justify-content: center;
 }
 
-.tech-item h4 {
+.tech-item h4,
+.tech-item h3 {
   font-size: 0.9rem;
   font-weight: 600;
 }
@@ -1352,7 +1353,8 @@ body.light-theme .moon-icon {
   max-width: 320px;
 }
 
-.footer-links-col h4 {
+.footer-links-col h4,
+.footer-links-col .footer-title {
   font-size: 0.95rem;
   margin-bottom: 1.5rem;
   text-transform: uppercase;
