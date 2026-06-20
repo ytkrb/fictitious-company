@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 test.describe('AstraNexus コーポレートサイト テスト', () => {
   test.beforeEach(async ({ page }) => {
     // ローカルサーバー上のトップページ（日本語版）に遷移
-    await page.goto('/');
+    await page.goto('./');
   });
 
   test('基本情報とSEO対策の検証（日本語版）', async ({ page }) => {
@@ -13,11 +13,11 @@ test.describe('AstraNexus コーポレートサイト テスト', () => {
     expect(metaTitle).toBe('AstraNexus | 次世代Webアプリケーション開発・SaaSエンジニアリング');
 
     const canonical = await page.locator('link[rel="canonical"]').getAttribute('href');
-    expect(canonical).toBe('https://astranexus.dev/');
+    expect(canonical).toBe('https://ytkrb.github.io/fictitious-company/');
 
     // hreflangタグの検証
-    await expect(page.locator('link[hreflang="ja"]')).toHaveAttribute('href', 'https://astranexus.dev/');
-    await expect(page.locator('link[hreflang="en"]')).toHaveAttribute('href', 'https://astranexus.dev/en/');
+    await expect(page.locator('link[hreflang="ja"]')).toHaveAttribute('href', 'https://ytkrb.github.io/fictitious-company/');
+    await expect(page.locator('link[hreflang="en"]')).toHaveAttribute('href', 'https://ytkrb.github.io/fictitious-company/en/');
   });
 
   test('ヘッダーロゴのアクセシビリティ検証', async ({ page }) => {
@@ -52,7 +52,7 @@ test.describe('AstraNexus コーポレートサイト テスト', () => {
 
     const enSwitcher = page.locator('.lang-switcher a.lang-link', { hasText: 'EN' });
     await expect(enSwitcher).toBeVisible();
-    await expect(enSwitcher).toHaveAttribute('href', '/en/');
+    await expect(enSwitcher).toHaveAttribute('href', './en/');
 
     // 2. EN をクリックして英語版へ遷移
     await enSwitcher.click();
@@ -71,10 +71,10 @@ test.describe('AstraNexus コーポレートサイト テスト', () => {
 
     const jpLink = page.locator('.lang-switcher a.lang-link', { hasText: 'JP' });
     await expect(jpLink).toBeVisible();
-    await expect(jpLink).toHaveAttribute('href', '/');
+    await expect(jpLink).toHaveAttribute('href', '../');
 
     // 5. JP をクリックして日本語版へ戻る
     await jpLink.click();
-    await expect(page).toHaveURL(/\/$/);
+    await expect(page).toHaveURL(/\/fictitious-company\/?$/);
   });
 });
