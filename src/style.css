@@ -318,6 +318,41 @@ body.light-theme .blur-blob {
   gap: 1rem;
 }
 
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: var(--font-title);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+}
+
+.lang-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.lang-link.active {
+  color: var(--accent);
+  cursor: default;
+  pointer-events: none;
+}
+
+.lang-link:not(.active):hover {
+  color: var(--text-primary);
+}
+
+.lang-divider {
+  color: var(--glass-border);
+  font-weight: 300;
+}
+
 .theme-toggle-btn {
   background: var(--glass-bg);
   border: 1px solid var(--glass-border);
